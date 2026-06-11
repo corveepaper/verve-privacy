@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aide & assistance — Verve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300..700&family=Geist+Mono:wght@300..600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #F5F1E8;
+    --ink: #0F0F0F;
+    --ink-soft: #6B6760;
+    --line: #D9D2BF;
+    --terra: #D94B1F;
+  }
+  html, body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: 'Geist', -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 80px 32px 140px; }
+  .eyebrow {
+    font-family: 'Geist Mono', monospace; font-size: 11px;
+    letter-spacing: .18em; color: var(--ink-soft); margin-bottom: 32px;
+    text-transform: uppercase;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .eyebrow a { color: var(--ink-soft); text-decoration: none; }
+  .eyebrow a:hover { color: var(--terra); }
+  h1 {
+    font-family: 'Instrument Serif', serif; font-size: clamp(32px, 5vw, 48px);
+    font-weight: 400; line-height: 1.15; margin: 0 0 12px;
+  }
+  .intro { color: var(--ink-soft); font-size: 16px; margin-bottom: 56px; line-height: 1.6; }
+  h2 {
+    font-size: 15px; font-weight: 600; letter-spacing: .02em;
+    margin: 40px 0 10px; border-top: 1px solid var(--line); padding-top: 28px;
+  }
+  p, li { font-size: 15px; line-height: 1.75; color: #2A2A2A; }
+  a.link { color: var(--terra); }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 4px; }
+  strong { font-weight: 600; }
+  .contact-card {
+    background: #EAF4EF; border: 1px solid #CFE6DA; border-radius: 12px;
+    padding: 20px 22px; margin: 8px 0 8px;
+  }
+  .contact-card .label {
+    font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: .12em;
+    text-transform: uppercase; color: #2E7A50; margin-bottom: 6px;
+  }
+  .contact-card a { color: #2E7A50; font-weight: 600; text-decoration: none; font-size: 17px; }
+  .qa { margin-bottom: 18px; }
+  .qa .q { font-weight: 600; margin-bottom: 2px; }
+  footer {
+    margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-family: 'Geist Mono', monospace; font-size: 11px;
+    letter-spacing: .1em; color: var(--ink-soft);
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 8px;
+  }
+  @media (max-width: 600px) { .wrap { padding: 48px 20px 80px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">
+    <span>Verve — App iOS</span>
+    <a href="https://corveepaper.fr">corveepaper.fr</a>
+  </div>
+
+  <h1>Aide &<br>assistance</h1>
+  <p class="intro">Application <strong>Verve</strong> — développée par Edgar Jacquemart.<br>
+  Une question, un bug, une suggestion ? On te répond.</p>
+
+  <h2>Nous contacter</h2>
+  <div class="contact-card">
+    <div class="label">Support</div>
+    <a href="mailto:contact@corveepaper.fr?subject=Verve%20—%20Support">contact@corveepaper.fr</a>
+  </div>
+  <p>Écris-nous pour toute question, problème technique ou idée d'amélioration. Précise ton modèle d'iPhone/iPad et ta version d'iOS, ça nous aide à t'aider plus vite.</p>
+
+  <h2>Questions fréquentes</h2>
+
+  <div class="qa">
+    <p class="q">Où sont stockées mes données ?</p>
+    <p>Entièrement sur ton appareil (via SwiftData, chiffré par iOS). Rien n'est envoyé sur un serveur. Si tu actives iCloud, tes habitudes et tâches se synchronisent entre tes appareils Apple, chiffrées de bout en bout par Apple.</p>
+  </div>
+
+  <div class="qa">
+    <p class="q">Comment connecter Apple Santé ?</p>
+    <p>Ouvre l'onglet Santé dans Verve et accepte les autorisations. Verve peut lire tes pas, distance, énergie, sommeil, fréquence cardiaque et VO₂ max, et écrire tes séances complétées. L'accès est optionnel : l'app fonctionne sans.</p>
+  </div>
+
+  <div class="qa">
+    <p class="q">Comment désactiver la synchronisation iCloud ?</p>
+    <p>Réglages iOS → [ton nom] → iCloud → Verve.</p>
+  </div>
+
+  <div class="qa">
+    <p class="q">Comment supprimer mes données ?</p>
+    <p>Désinstaller Verve efface toutes les données locales. Les données iCloud se suppriment dans Réglages → [ton nom] → iCloud → Gérer le stockage → Verve. Les données écrites dans Apple Santé se retirent depuis l'app Santé d'Apple.</p>
+  </div>
+
+  <div class="qa">
+    <p class="q">L'app collecte-t-elle des données ?</p>
+    <p>Non. Aucune collecte, aucun traçage, aucune publicité. Voir la <a class="link" href="../">politique de confidentialité</a>.</p>
+  </div>
+
+  <footer>
+    <span>© 2026 Edgar Jacquemart</span>
+    <span>verve-support · v1.0</span>
+  </footer>
+</div>
+</body>
+</html>
